@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/EEzWYfcesaa
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -19,18 +14,17 @@ import {
   CollapsibleTrigger,
   CollapsibleContent,
 } from "@/components/ui/collapsible";
+import { ChevronRightIcon, MenuIcon } from "lucide-react";
 
 export default function Component() {
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
-        <Link href="#" className="flex items-center" prefetch={false}>
-          <img
-            src="/logo.png" // Substitua pelo caminho da sua imagem
-            alt="Logo" // Descrição da imagem para acessibilidade
-            className="h-auto w-14" // Ajuste a largura e altura conforme necessário
-          />
-        </Link>
+        <img
+          src="/logo.png" // Substitua pelo caminho da sua imagem
+          alt="Logo" // Descrição da imagem para acessibilidade
+          className="h-auto w-14" // Ajuste a largura e altura conforme necessário
+        />
       </Link>
       <NavigationMenu className="hidden lg:flex">
         <NavigationMenuList>
@@ -71,8 +65,7 @@ export default function Component() {
                       Desenvolvimento de ChatBoot
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Expanda sua aplicação com nossas ferramentas para
-                      desenvolvedores.
+                      Expanda sua aplicação com nossas ferramentas para desenvolvedores.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -86,8 +79,7 @@ export default function Component() {
                       Segurança &amp; Conformidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Mantenha seus dados seguros com nossos recursos de
-                      segurança.
+                      Mantenha seus dados seguros com nossos recursos de segurança.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -101,8 +93,7 @@ export default function Component() {
                       Escalabilidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Sua aplicação desenvolvidade forma escalavel com nossa
-                      infraestrutura.
+                      Sua aplicação desenvolvidade forma escalavel com nossa infraestrutura.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -150,7 +141,7 @@ export default function Component() {
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
-              Inico
+              Inicio
             </Link>
             <Collapsible className="grid gap-4">
               <CollapsibleTrigger className="flex w-full items-center text-lg font-semibold [&[data-state=open]>svg]:rotate-90">
@@ -165,10 +156,10 @@ export default function Component() {
                     prefetch={false}
                   >
                     <div className="text-sm font-medium leading-none group-hover:underline">
-                     Analise
+                      Analise
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                    Melhore seus relatórios com análises avançadas.
+                      Melhore seus relatórios com análises avançadas.
                     </div>
                   </Link>
                   <Link
@@ -177,11 +168,10 @@ export default function Component() {
                     prefetch={false}
                   >
                     <div className="text-sm font-medium leading-none group-hover:underline">
-                    Desenvolvimento de ChatBoot
+                      Desenvolvimento de ChatBoot
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                    Expanda sua aplicação com nossas ferramentas para
-                    desenvolvedores.
+                      Expanda sua aplicação com nossas ferramentas para desenvolvedores.
                     </div>
                   </Link>
                   <Link
@@ -190,11 +180,10 @@ export default function Component() {
                     prefetch={false}
                   >
                     <div className="text-sm font-medium leading-none group-hover:underline">
-                    Segurança &amp; Conformidade
+                      Segurança &amp; Conformidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                    Mantenha seus dados seguros com nossos recursos de
-                    segurança.
+                      Mantenha seus dados seguros com nossos recursos de segurança.
                     </div>
                   </Link>
                   <Link
@@ -203,11 +192,10 @@ export default function Component() {
                     prefetch={false}
                   >
                     <div className="text-sm font-medium leading-none group-hover:underline">
-                    Escalabilidade
+                      Escalabilidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                    Sua aplicação desenvolvidade forma escalavel com nossa
-                    infraestrutura.
+                      Sua aplicação desenvolvidade forma escalavel com nossa infraestrutura.
                     </div>
                   </Link>
                 </div>
@@ -218,7 +206,7 @@ export default function Component() {
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
-              Serviços
+              Serviço
             </Link>
             <Link
               href="#"
@@ -234,64 +222,5 @@ export default function Component() {
         <Button>Começar</Button>
       </div>
     </header>
-  );
-}
-
-function ChevronRightIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m9 18 6-6-6-6" />
-    </svg>
-  );
-}
-
-function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>
-  );
-}
-
-function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   );
 }

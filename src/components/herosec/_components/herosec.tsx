@@ -86,8 +86,8 @@ export default function HeroTag() {
                   {
                     title: "JOV Education",
                     description: "Plataforma de educação tecnológica",
-                    link: "https://jov-education.example.com",
-                    image: "/path/to/jov-education-image.jpg",
+                    link: "https://tistto-repo.vercel.app/",
+                    image: "https://tistto-repo.vercel.app/assets/Tistto_principal.png",
                   },
                   {
                     title: "Tistto",
