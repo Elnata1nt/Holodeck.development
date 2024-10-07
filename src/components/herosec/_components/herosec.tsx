@@ -94,13 +94,15 @@ export default function HeroTag() {
                     description:
                       "Site de uma empresa de verificação de notícias falsas",
                     link: "https://tistto-repo.vercel.app/",
-                    image: "https://tistto-repo.vercel.app/assets/Tistto_principal.png",
+                    image:
+                      "https://tistto-repo.vercel.app/assets/Tistto_principal.png",
                   },
                   {
                     title: "Vitrine Nova Moda fFitness",
                     description: "Vitrine da loja Nova Moda Fitness",
                     link: "https://nova-moda-fitness.vercel.app/",
-                    image: "https://lh3.googleusercontent.com/p/AF1QipOa2xrQojeAm2RoBM20SQLF70U_A43W5RzYPUvk=s1360-w1360-h1020",
+                    image:
+                      "https://lh3.googleusercontent.com/p/AF1QipOa2xrQojeAm2RoBM20SQLF70U_A43W5RzYPUvk=s1360-w1360-h1020",
                   },
                 ].map(({ title, description, link, image }) => (
                   <Card key={title}>
@@ -124,7 +126,7 @@ export default function HeroTag() {
                         className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                         prefetch={false}
                       >
-                        View Project
+                        Ver Projeto
                       </Link>
                     </CardFooter>
                   </Card>
@@ -137,12 +139,12 @@ export default function HeroTag() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Get in Touch
+                <h2 className="text-3xl text-lime-500 font-bold tracking-tighter sm:text-5xl">
+                  Entre em Contato
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Feel free to reach out to me if you have any questions or
-                  would like to discuss a project.
+                  Fique à vontade para me contatar se tiver alguma dúvida ou se
+                  quiser discutir um projeto.
                 </p>
               </div>
               <form className="w-full max-w-md space-y-4 mx-auto">
@@ -150,7 +152,7 @@ export default function HeroTag() {
                 <Input type="email" placeholder="Email" className="w-full" />
                 <Textarea placeholder="Message" rows={4} className="w-full" />
                 <Button type="submit" className="w-full">
-                  Send Message
+                  Enviar Mensagem
                 </Button>
               </form>
             </div>
