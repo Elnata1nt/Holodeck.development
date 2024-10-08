@@ -15,14 +15,17 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { ChevronRightIcon, MenuIcon } from "lucide-react";
+import Image from 'next/image'; // Importação do componente Image
 
 export default function Component() {
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
-        <img
-          src="/logo.png" // Substitua pelo caminho da sua imagem
+        <Image
+          src="/logo.png" // Caminho da sua imagem
           alt="Logo" // Descrição da imagem para acessibilidade
+          width={56} // Defina a largura desejada
+          height={56} // Defina a altura desejada
           className="h-auto w-14" // Ajuste a largura e altura conforme necessário
         />
       </Link>
@@ -129,9 +132,11 @@ export default function Component() {
         </SheetTrigger>
         <SheetContent side="left">
           <Link href="#" className="flex items-center" prefetch={false}>
-            <img
-              src="/logo.png" // Substitua pelo caminho da sua imagem
+            <Image
+              src="/logo.png" // Caminho da sua imagem
               alt="Logo" // Descrição da imagem para acessibilidade
+              width={56} // Defina a largura desejada
+              height={56} // Defina a altura desejada
               className="h-auto w-14" // Ajuste a largura e altura conforme necessário
             />
           </Link>

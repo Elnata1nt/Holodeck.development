@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Instagram, Linkedin, Github } from "lucide-react";
+import { Instagram, Linkedin, Github } from "lucide-react"; // Importa apenas os ícones
+import Image from "next/image"; // Importa o componente de imagem do Next.js
 
 export default function Footer() {
   return (
@@ -8,10 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-28 text-center md:text-left">
           {/* Left section */}
           <div className="flex flex-col items-center md:items-start">
-            <img
-              src="/logo.png" 
-              alt="Logo"
-              className="h-auto w-14 mb-4" 
+            <Image 
+                src="/logo.png" // substitua pelo caminho correto da sua imagem
+                alt="Descrição significativa da imagem" // adicione uma descrição significativa
+                width={100} // Defina a largura desejada
+                height={100} // Defina a altura desejada
             />
             <Link
               href="/privacy-policy"
