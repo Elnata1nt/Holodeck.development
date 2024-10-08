@@ -10,7 +10,7 @@ import {
 
 export default function HeroTag() {
   return (
-    <div className="flex flex-col min-h-[70dvh] items-center justify-center">
+    <div className="flex flex-col min-h-[70dvh] items-center bg-black justify-center">
       <main className="flex-1 w-full">
         <section
           id="skills"
@@ -19,7 +19,7 @@ export default function HeroTag() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-5xl">
                   Minhas Skills
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

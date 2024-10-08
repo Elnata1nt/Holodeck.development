@@ -60,7 +60,6 @@ export default function ProjectsSection() {
                     className="rounded-t-md"
                     width={300}
                     height={200}
-                    layout="responsive" // Adapta a imagem ao espaço disponível
                   />
                 </CardContent>
                 <CardFooter>

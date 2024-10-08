@@ -15,7 +15,7 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { ChevronRightIcon, MenuIcon } from "lucide-react";
-import Image from 'next/image'; // Importação do componente Image
+import Image from "next/image"; // Importação do componente Image
 
 export default function Component() {
   return (
@@ -68,7 +68,8 @@ export default function Component() {
                       Desenvolvimento de ChatBoot
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Expanda sua aplicação com nossas ferramentas para desenvolvedores.
+                      Expanda sua aplicação com nossas ferramentas para
+                      desenvolvedores.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -82,7 +83,8 @@ export default function Component() {
                       Segurança &amp; Conformidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Mantenha seus dados seguros com nossos recursos de segurança.
+                      Mantenha seus dados seguros com nossos recursos de
+                      segurança.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -96,7 +98,8 @@ export default function Component() {
                       Escalabilidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Sua aplicação desenvolvidade forma escalavel com nossa infraestrutura.
+                      Sua aplicação desenvolvidade forma escalavel com nossa
+                      infraestrutura.
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -176,7 +179,8 @@ export default function Component() {
                       Desenvolvimento de ChatBoot
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Expanda sua aplicação com nossas ferramentas para desenvolvedores.
+                      Expanda sua aplicação com nossas ferramentas para
+                      desenvolvedores.
                     </div>
                   </Link>
                   <Link
@@ -188,7 +192,8 @@ export default function Component() {
                       Segurança &amp; Conformidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Mantenha seus dados seguros com nossos recursos de segurança.
+                      Mantenha seus dados seguros com nossos recursos de
+                      segurança.
                     </div>
                   </Link>
                   <Link
@@ -200,7 +205,8 @@ export default function Component() {
                       Escalabilidade
                     </div>
                     <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      Sua aplicação desenvolvidade forma escalavel com nossa infraestrutura.
+                      Sua aplicação desenvolvidade forma escalavel com nossa
+                      infraestrutura.
                     </div>
                   </Link>
                 </div>
