@@ -5,6 +5,7 @@ import HeroData from "../components/hero/_components/hero";
 import HeroTag from "../components/herosec/_components/herosec";
 import ProjectsSection from "@/components/projects/_components/projects";
 import ComuniationSection from "@/components/comunication/_components/comunication";
+import Chat from "@/components/chat/_components/chat";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <ProjectsSection />
     <ContactSection />
     <Footer />
+    <Chat />
     </>
   );
 }
