@@ -18,6 +18,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "VOLTX",
   description: "Desenvolvendo sua solução",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

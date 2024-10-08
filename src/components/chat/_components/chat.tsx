@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { X, SendHorizontal } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Chat() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,7 +38,7 @@ export default function Chat() {
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 mb-4 overflow-hidden">
           <div className="bg-emerald-600 p-4 flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <img
+              <Image
                 src="/user-perfil.jpg?height=40&width=40"
                 alt="Profile"
                 className="w-10 h-10 rounded-full"
