@@ -235,6 +235,13 @@ export default function Component() {
             >
               Contato
             </Link>
+            <Link
+              href="/about"
+              className="flex w-full items-center py-2 text-lg font-semibold"
+              prefetch={false}
+            >
+              Sobre mim
+            </Link>
           </div>
         </SheetContent>
       </Sheet>
