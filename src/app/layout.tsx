@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "VOLTX",
   description: "Desenvolvendo sua solução",
   icons: {
-    icon: "/logo.png", // Mantido o ícone aqui
+    icon: "/favicon.ico",
   },
 };
 
@@ -31,6 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Adicionando o favicon */}
+        <link rel="icon" href="/logo.png" sizes="any" type="image/x-icon" />
         <title>VOLTX</title>
       </head>
       <body
