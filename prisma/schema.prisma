@@ -1,0 +1,16 @@
+datasource db {
+  provider = "sqlite" // Usando SQLite
+  url      = "file:./dev.db" // Caminho para o banco de dados SQLite
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Meeting {
+  id    Int      @id @default(autoincrement())
+  name  String
+  email String
+  date  DateTime
+  time  String
+}

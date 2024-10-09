@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function HeroData() {
   return (
@@ -17,13 +18,17 @@ export default function HeroData() {
         que cobrem todo o ciclo de vida do seu projeto, da concepção ao lançamento.
       </p>
       <div className="flex space-x-4">
+      <Link href="/notfound" passHref>
         <Button variant="default" className="px-6 py-3">
-          Contrate agora
+          Contrate Agora
         </Button>
+      </Link>
+      <Link href="/scheduling" passHref>
         <Button variant="outline" className="px-6 py-3">
           Agende uma reunião
         </Button>
-      </div>
+      </Link>
+    </div>
       <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
         <Card className="flex items-center justify-center p-4 bg-gray-100">
           <div className="text-center">

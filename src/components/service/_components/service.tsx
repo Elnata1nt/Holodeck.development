@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Layout, Building, Globe, Smartphone, Code, Cog } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -186,12 +187,16 @@ export default function ServicePage() {
                   </h3>
                   <p className="text-lime-700">{service.description}</p>
                   <div className="flex mt-5 space-x-4">
-                    <Button variant="default" className="px-6 py-3">
-                      Contrate agora
-                    </Button>
-                    <Button variant="outline" className="px-6 py-3">
-                      Agende uma reunião
-                    </Button>
+                    <Link href="/notfound" passHref>
+                      <Button variant="default" className="px-6 py-3">
+                        Contrate Agora
+                      </Button>
+                    </Link>
+                    <Link href="/notfound" passHref>
+                      <Button variant="outline" className="px-6 py-3">
+                        Agende uma reunião
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <AnimatePresence>

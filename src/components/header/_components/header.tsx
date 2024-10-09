@@ -20,7 +20,7 @@ import Image from "next/image"; // Importação do componente Image
 export default function Component() {
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
-      <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
+      <Link href="/" className="mr-6 hidden lg:flex" prefetch={false}>
         <Image
           src="/logo.png" // Caminho da sua imagem
           alt="Logo" // Descrição da imagem para acessibilidade
@@ -46,7 +46,7 @@ export default function Component() {
               <div className="grid w-[400px] p-2">
                 <NavigationMenuLink asChild>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                     prefetch={false}
                   >
@@ -60,7 +60,7 @@ export default function Component() {
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                     prefetch={false}
                   >
@@ -75,7 +75,7 @@ export default function Component() {
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                     prefetch={false}
                   >
@@ -143,7 +143,7 @@ export default function Component() {
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
-          <Link href="#" className="flex items-center" prefetch={false}>
+          <Link href="/notfound" className="flex items-center" prefetch={false}>
             <Image
               src="/logo.png" // Caminho da sua imagem
               alt="Logo" // Descrição da imagem para acessibilidade
@@ -168,7 +168,7 @@ export default function Component() {
               <CollapsibleContent>
                 <div className="-mx-6 grid gap-6 bg-muted p-6">
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -180,7 +180,7 @@ export default function Component() {
                     </div>
                   </Link>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -193,7 +193,7 @@ export default function Component() {
                     </div>
                   </Link>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -206,7 +206,7 @@ export default function Component() {
                     </div>
                   </Link>
                   <Link
-                    href="#"
+                    href="/notfound"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -222,14 +222,14 @@ export default function Component() {
               </CollapsibleContent>
             </Collapsible>
             <Link
-              href="#"
+              href="/notfound"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Serviço
             </Link>
             <Link
-              href="#"
+              href="/notfound"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
@@ -246,7 +246,11 @@ export default function Component() {
         </SheetContent>
       </Sheet>
       <div className="ml-auto">
-        <Button>Começar</Button>
+      <Link href="/notfound" passHref>
+        <Button variant="default" className="px-6 py-3">
+          Começar
+        </Button>
+      </Link>
       </div>
     </header>
   );
