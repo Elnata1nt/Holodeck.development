@@ -1,111 +1,111 @@
 import Link from "next/link";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import {
-  AirVentIcon,
-  BookOpenIcon,
-  CodeIcon,
-  CodepenIcon,
-  GitGraphIcon,
-  Music,
-  NetworkIcon,
-  TreesIcon,
-  TypeIcon,
-  WindIcon,
-} from "lucide-react";
+// import {
+//   AirVentIcon,
+//   BookOpenIcon,
+//   CodeIcon,
+//   CodepenIcon,
+//   GitGraphIcon,
+//   Music,
+//   NetworkIcon,
+//   TreesIcon,
+//   TypeIcon,
+//   WindIcon,
+// } from "lucide-react";
 
 export default function ProfileSection() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
         <section className="w-full bg-black py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto px-6 md:px-8 lg:px-10 grid gap-8 lg:grid-cols-2 lg:gap-16">
+          <div className="container mx-auto px-6 md:px-8 lg:px-10">
             {/* Centralizando o conteúdo */}
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <Avatar className="h-24 w-24 mb-4">
-                <AvatarImage src="/user-perfil.jpg" alt="@shadcn" />
+                <AvatarImage src="/user-perfil.jpg" alt="Elnatã Corrêa" />
                 <AvatarFallback>ET</AvatarFallback>
               </Avatar>
               <h1 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Elnatã Corrêa
               </h1>
-              <p
-                className="max-w-[600px] text-muted-foreground md:text-lg"
-                style={{ textAlign: "justify" }}
-              >
-                Oi, sou Elnata Correa, tenho 24 anos e moro em Manaus. Sou
-                desenvolvedora fullstack com experiência em criar aplicações que
-                fazem a diferença. Adoro explorar novas tecnologias e me
-                conectar com pessoas que compartilham interesses semelhantes.
-                Quando não estou programando, gosto de aproveitar a natureza e a
-                cultura da minha cidade. Vamos trocar ideias!
+              <p className="max-w-[700px] text-muted-foreground md:text-lg text-justify">
+                Oi, sou Elnata Correa, tenho 24 anos e atualmente estou cursando
+                Engenharia da Computação. Com 2 anos de experiência no
+                desenvolvimento web fullstack, já atuei em projetos que vão
+                desde soluções personalizadas até plataformas escaláveis. Tenho
+                um grande interesse por tecnologias inovadoras e sempre busco
+                aprender algo novo para aprimorar minhas habilidades. Sou
+                apaixonada por desenvolver aplicações que proporcionam impacto
+                real.
+              </p>
+              <p className="max-w-[700px] text-muted-foreground md:text-lg text-justify">
+                Quando não estou programando, gosto de explorar a natureza e a
+                cultura de Manaus, onde moro. Acredito no poder da colaboração e
+                estou sempre aberta para trocar ideias e aprender com outros
+                profissionais. Vamos construir algo incrível juntos!
               </p>
             </div>
+          </div>
+        </section>
 
-            <div className="grid gap-8">
-              {" "}
-              {/* Removido ml-5 aqui */}
-              <div className="grid gap-2">
-                <h2 className="text-2xl text-white font-bold">Background</h2>
-                <p
-                  className="text-muted-foreground"
-                  style={{ textAlign: "justify" }}
-                >
-                  Sou graduada em Ciência da Computação e atuo como engenheira
-                  de software há 5 anos. Ao longo da minha carreira, tive a
-                  chance de colaborar em projetos diversos, abrangendo desde
-                  startups inovadoras até soluções empresariais complexas. Minha
-                  paixão por tecnologia me impulsiona a explorar novas
-                  ferramentas e frameworks, sempre buscando otimizar a
-                  experiência do usuário e a eficiência do sistema. Estou
-                  comprometida em entregar código de alta qualidade e em
-                  trabalhar de forma colaborativa em equipes ágeis para resolver
-                  desafios técnicos e criar aplicações impactantes.
+        <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container mx-auto px-6 md:px-8 lg:px-10 grid gap-8 lg:gap-16">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Minhas Habilidades
+                </h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Aqui estão algumas das tecnologias e ferramentas que domino.
                 </p>
               </div>
-              <div className="grid gap-2">
-                <h2 className="text-2xl text-white font-bold">Skills</h2>
-                <div className="flex flex-wrap gap-3">
-                  {/* Aumentei o gap aqui */}
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <CodepenIcon className="h-5 w-5" />
-                    React
+            </div>
+            <div className="mx-auto grid gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+              <div className="flex flex-col justify-between space-y-4 rounded-lg border bg-background p-6 shadow-sm">
+                <div>
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Linguagens de Programação
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <NetworkIcon className="h-5 w-5" />
-                    Node.js
-                  </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <TypeIcon className="h-5 w-5" />
-                    TypeScript
-                  </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <WindIcon className="h-5 w-5" />
-                    Tailwind CSS
-                  </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <GitGraphIcon className="h-5 w-5" />
-                    Git
+                  <div className="space-y-2 pt-4">
+                    <h3 className="text-xl font-bold">Linguagens</h3>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>JavaScript</li>
+                      <li>Python</li>
+                      <li>Java</li>
+                      <li>C++</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div className="grid gap-2">
-                <h2 className="text-2xl font-bold">Interesses</h2>
-                <div className="flex flex-wrap gap-3">
-                  {/* Aumentei o gap aqui */}
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <CodeIcon className="h-5 w-5" /> Programação
+              <div className="flex flex-col justify-between space-y-4 rounded-lg border bg-background p-6 shadow-sm">
+                <div>
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Frameworks e Bibliotecas
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <BookOpenIcon className="h-5 w-5" /> Leitura
+                  <div className="space-y-2 pt-4">
+                    <h3 className="text-xl font-bold">Frameworks</h3>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>React</li>
+                      <li>Angular</li>
+                      <li>Vue.js</li>
+                      <li>Node.js</li>
+                    </ul>
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <TreesIcon className="h-5 w-5" /> Passeios na Natureza
+                </div>
+              </div>
+              <div className="flex flex-col justify-between space-y-4 rounded-lg border bg-background p-6 shadow-sm">
+                <div>
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Ferramentas e Tecnologias
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <AirVentIcon className="h-5 w-5" /> Viagens
-                  </div>
-                  <div className="inline-flex items-center gap-2 rounded-lg bg-muted px-3 py-1 text-sm">
-                    <Music className="h-5 w-5" /> Música
+                  <div className="space-y-2 pt-4">
+                    <h3 className="text-xl font-bold">Ferramentas</h3>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>Git</li>
+                      <li>GitHub</li>
+                      <li>Visual Studio Code</li>
+                      <li>Docker</li>
+                    </ul>
                   </div>
                 </div>
               </div>
