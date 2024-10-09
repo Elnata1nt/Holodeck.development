@@ -143,7 +143,7 @@ export default function Component() {
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
-          <Link href="/notfound" className="flex items-center" prefetch={false}>
+          <Link href="/" className="flex items-center" prefetch={false}>
             <Image
               src="/logo.png" // Caminho da sua imagem
               alt="Logo" // Descrição da imagem para acessibilidade
@@ -168,7 +168,7 @@ export default function Component() {
               <CollapsibleContent>
                 <div className="-mx-6 grid gap-6 bg-muted p-6">
                   <Link
-                    href="/notfound"
+                    href="/"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -206,7 +206,7 @@ export default function Component() {
                     </div>
                   </Link>
                   <Link
-                    href="/notfound"
+                    href="/scalability"
                     className="group grid h-auto w-full justify-start gap-1"
                     prefetch={false}
                   >
@@ -222,14 +222,14 @@ export default function Component() {
               </CollapsibleContent>
             </Collapsible>
             <Link
-              href="/notfound"
+              href="/service"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Serviço
             </Link>
             <Link
-              href="/notfound"
+              href="#contact"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
