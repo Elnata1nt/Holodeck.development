@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 // Metadata
 export const metadata: Metadata = {
-  title: "VOLTX",
+  title: "<DevCode/>",
   description: "Desenvolvendo sua solução",
   icons: {
     icon: "/favicon.ico",
@@ -33,7 +33,7 @@ export default function RootLayout({
       <head>
         {/* Adicionando o favicon */}
         <link rel="icon" href="/logo.png" sizes="any" type="image/x-icon" />
-        <title>VOLTX</title>
+        <title>{"<DevCode/>"}</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
