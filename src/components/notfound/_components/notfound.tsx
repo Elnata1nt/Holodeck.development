@@ -10,7 +10,7 @@ export default function  NotFoundSection() {
           alt="Página não encontrada"
           width="300"
           height="300"
-          className="mx-auto"
+          className="mx-auto rounded-2xl"
           style={{ aspectRatio: "300/300", objectFit: "cover" }}
         />
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
