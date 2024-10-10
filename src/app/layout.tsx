@@ -21,7 +21,26 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  authors: [
+    {
+      name: "Elnata Correa",
+      url: "https://my-portfolio-seven-theta-28.vercel.app/",
+    },
+  ],
+  openGraph: {
+
+    title: "<DevCode/>",
+    description: "Desenvolvendo sua solução",
+    images: [
+      {
+        url: "https://my-portfolio-seven-theta-28.vercel.app/portifolio-elnata.png",
+        alt: "<DevCode/>",
+      }
+    ],
+    authors: "Elnata",
+  }
 };
+
 
 export default function RootLayout({
   children,
