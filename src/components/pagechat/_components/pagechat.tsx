@@ -6,7 +6,7 @@ import { Users, Shield, Zap, ChevronRight, Star, Download } from "lucide-react"
 
 export default function PageChatsection() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-lime-300 to-white">
+    <div className="min-h-screen bg-primary-foreground">
       <main className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
