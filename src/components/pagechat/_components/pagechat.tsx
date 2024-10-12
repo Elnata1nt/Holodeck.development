@@ -6,7 +6,7 @@ import { Users, Shield, Zap, ChevronRight, Star, Download } from "lucide-react"
 
 export default function PageChatsection() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-lime-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-lime-300 to-white">
       <main className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
@@ -16,7 +16,7 @@ export default function PageChatsection() {
             Automatize conversas e crie experiências interativas para seus usuários com o poder de um Chatbot inteligente.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button size="lg" className="bg-lime-600 hover:bg-lime-700 text-white">
+            <Button size="lg" className="bg-black hover:bg-slate-800 text-white">
               Comece Agora
             </Button>
             <Button size="lg" variant="outline">
