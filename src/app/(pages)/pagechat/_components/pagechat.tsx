@@ -1,5 +1,5 @@
 import Footer from "@/components/footer/_components/footer";
-import PageChatsection from "@/components/pagechat/_components/pagechat";
+import PageChatsection from "@/components/(features)/pagechat/_components/pagechat";
 import Header from "@/components/header/_components/header";
 import Chat from "@/components/chat/_components/chat";
 

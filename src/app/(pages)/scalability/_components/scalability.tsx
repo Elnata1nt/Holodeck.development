@@ -1,7 +1,7 @@
 import Chat from "@/components/chat/_components/chat";
 import Footer from "@/components/footer/_components/footer";
 import Header from "@/components/header/_components/header";
-import ScalabilityPage from "@/components/scalability/_components/scalability";
+import ScalabilityPage from "@/components/(features)/scalability/_components/scalability";
 
 
 export default function Scalability() {

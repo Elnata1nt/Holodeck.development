@@ -1,4 +1,4 @@
-import { AnimatedBeamMultipleOutputDemo } from "@/components/multoutputs/_components/multoutputs"
+import { AnimatedBeamMultipleOutputDemo } from "@/components/(features)/pagechat/multoutputs/_components/multoutputs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"

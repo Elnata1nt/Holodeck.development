@@ -17,7 +17,7 @@ import {
 import { ChevronRightIcon, MenuIcon } from "lucide-react";
 import Image from "next/image"; // Importação do componente Image
 
-export default function Component() {
+export default function Header() {
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="/" className="mr-6 hidden lg:flex" prefetch={false}>
