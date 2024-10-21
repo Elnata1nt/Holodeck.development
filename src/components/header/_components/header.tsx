@@ -19,7 +19,7 @@ import Image from "next/image"; // Importação do componente Image
 
 export default function Header() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+    <header className="flex h-20 border-b-2 border-lime-700 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="/" className="mr-6 hidden lg:flex" prefetch={false}>
         <Image
           src="/logo.png" // Caminho da sua imagem
@@ -115,7 +115,7 @@ export default function Header() {
               Serviço
             </Link>
           </NavigationMenuLink>
-          <NavigationMenuLink asChild>
+          {/* <NavigationMenuLink asChild>
             <Link
               href="#contact"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
@@ -123,7 +123,7 @@ export default function Header() {
             >
               Contato
             </Link>
-          </NavigationMenuLink>
+          </NavigationMenuLink> */}
           <NavigationMenuLink asChild>
             <Link
               href="/about"
@@ -228,13 +228,13 @@ export default function Header() {
             >
               Serviço
             </Link>
-            <Link
+            {/* <Link
               href="#contact"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
               Contato
-            </Link>
+            </Link> */}
             <Link
               href="/about"
               className="flex w-full items-center py-2 text-lg font-semibold"
