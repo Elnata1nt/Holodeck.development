@@ -57,8 +57,8 @@ export default function ServicePage() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       {/* Hero Section */}
-      <section className="bg-lime-400 lg:p-8 text-center">
-        <div className="min-h-screen bg-black p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-between">
+      <section className="bg-lime-300 lg:p-8 text-center">
+        <div className=" bg-black p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-between">
           <header className="text-lime-500 text-sm sm:text-base">
             VISÃO FUTURA
           </header>
@@ -100,7 +100,7 @@ export default function ServicePage() {
             </span>
           </main>
           <footer className="flex justify-between text-lime-500 text-sm sm:text-base">
-            <span>THE VOLTEX</span>
+            <span>DEVCODER</span>
             <span>© 2024</span>
           </footer>
         </div>
@@ -155,7 +155,7 @@ export default function ServicePage() {
           ))}
         </div>
       </section>
-      <section className="py-16 bg-lime-400">
+      <section className="py-16 bg-lime-300">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-lime-900">
             Nossos Serviços

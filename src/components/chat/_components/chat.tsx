@@ -36,7 +36,7 @@ export default function Chat() {
 <div className="fixed bottom-4 right-4 z-[10001] flex flex-col items-end pointer-events-auto">
   {isOpen && (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 mb-4 overflow-hidden">
-          <div className="bg-emerald-600 p-4 flex items-center justify-between">
+          <div className="bg-lime-600 p-4 flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Image
                 src="/user-perfil.jpg?height=40&width=40"
@@ -45,19 +45,19 @@ export default function Chat() {
               />
               <div>
                 <h3 className="text-white font-semibold">Elnata Correa</h3>
-                <p className="text-emerald-200 text-sm">Online</p>
+                <p className="text-lime-200 text-sm">Online</p>
               </div>
             </div>
             <button 
               onClick={toggleChat} 
-              className="text-white hover:text-emerald-200"
+              className="text-white hover:text-lime-200"
               aria-label="Fechar chat"
             >
               <X className="w-6 h-6" />
             </button>
           </div>
           <div 
-            className="h-80 overflow-y-auto p-2 bg-emerald-50 dark:bg-gray-700"
+            className="h-80 overflow-y-auto p-2 bg-lime-50 dark:bg-gray-700"
             style={{
               backgroundImage: `url('/bg-whatsapp.jpeg')`,
               backgroundSize: 'cover',
@@ -78,12 +78,12 @@ export default function Chat() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Quero fazer um orçamento!"
-                className="flex-grow p-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:bg-white dark:text-black dark:border-gray-600"
+                className="flex-grow p-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-lime-500 dark:bg-white dark:text-black dark:border-gray-600"
                 aria-label="Digite sua mensagem"
               />
               <button
                 type="submit"
-                className="bg-emerald-500 text-white p-2 rounded-full hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="bg-lime-500 text-white p-2 rounded-full hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
                 aria-label="Enviar mensagem"
               >
                 <SendHorizontal className="w-5 h-5" />
@@ -97,7 +97,7 @@ export default function Chat() {
       )}
       <button
         onClick={toggleChat}
-        className="bg-emerald-500 text-white p-4 rounded-full shadow-lg hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emercel-500"
+        className="bg-lime-500 text-white p-4 rounded-full shadow-lg hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-emercel-500"
         aria-label={isOpen ? "Fechar chat" : "Abrir chat"}
       >
         <svg
