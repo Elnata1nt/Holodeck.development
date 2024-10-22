@@ -1,46 +1,50 @@
-"use client"; 
+"use client";
 
-import { useState, useEffect } from 'react';
-import { X, SendHorizontal } from 'lucide-react';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import { X, SendHorizontal } from "lucide-react";
+import Image from "next/image";
 
 export default function Chat() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [message, setMessage] = useState('')
-  const [currentTime, setCurrentTime] = useState('')
+  const [isOpen, setIsOpen] = useState(false);
+  const [message, setMessage] = useState("");
+  const [currentTime, setCurrentTime] = useState("");
 
-  const toggleChat = () => setIsOpen(!isOpen)
+  const toggleChat = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     const updateTime = () => {
-      const now = new Date()
-      setCurrentTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
-    }
-    updateTime()
-    const timer = setInterval(updateTime, 60000)
-    return () => clearInterval(timer)
-  }, [])
+      const now = new Date();
+      setCurrentTime(
+        now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+      );
+    };
+    updateTime();
+    const timer = setInterval(updateTime, 60000);
+    return () => clearInterval(timer);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     if (message.trim()) {
-      const phoneNumber = '5592993007673'
-      const encodedMessage = encodeURIComponent(message)
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
-      window.open(whatsappUrl, '_blank')
-      setMessage('')
+      const phoneNumber = "5592993007673";
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(whatsappUrl, "_blank");
+      setMessage("");
     }
-  }
+  };
 
   return (
-<div className="fixed bottom-4 right-4 z-[10001] flex flex-col items-end pointer-events-auto">
-  {isOpen && (
+    <div className="fixed bottom-4 right-4 z-[10001] flex flex-col items-end pointer-events-auto">
+      {isOpen && (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 mb-4 overflow-hidden">
-          <div className="bg-lime-600 p-4 flex items-center justify-between">
+          <div className="bg-emerald-600 p-4 flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Image
-                src="/user-perfil.jpg?height=40&width=40"
+                src="/user-perfil.jpg"
                 alt="Profile"
+                width={40}
+                height={40}
                 className="w-10 h-10 rounded-full"
               />
               <div>
@@ -48,51 +52,50 @@ export default function Chat() {
                 <p className="text-lime-200 text-sm">Online</p>
               </div>
             </div>
-            <button 
-              onClick={toggleChat} 
+            <button
+              onClick={toggleChat}
               className="text-white hover:text-lime-200"
               aria-label="Fechar chat"
             >
               <X className="w-6 h-6" />
             </button>
           </div>
-          <div 
+          <div
             className="h-80 overflow-y-auto p-2 bg-lime-50 dark:bg-gray-700"
             style={{
               backgroundImage: `url('/bg-whatsapp.jpeg')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
             <div className="bg-white p-2 text-black dark:text-black rounded-lg shadow mb-2 max-w-[80%]">
               <p>Olá 👋</p>
               <p>O que você está precisando?</p>
-              <span className="text-xs text-gray-500 dark:text-gray-400">{currentTime}</span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {currentTime}
+              </span>
             </div>
-
 
             <form onSubmit={handleSubmit} className="p-2 mt-40">
-            <div className="flex items-center space-x-2">
-              <input
-                type="text"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Quero fazer um orçamento!"
-                className="flex-grow p-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-lime-500 dark:bg-white dark:text-black dark:border-gray-600"
-                aria-label="Digite sua mensagem"
-              />
-              <button
-                type="submit"
-                className="bg-lime-500 text-white p-2 rounded-full hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
-                aria-label="Enviar mensagem"
-              >
-                <SendHorizontal className="w-5 h-5" />
-              </button>
-            </div>
-          </form>
+              <div className="flex items-center space-x-2">
+                <input
+                  type="text"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="  Quero fazer um orçamento!"
+                  className="flex-grow p-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-lime-500 dark:bg-white dark:text-black dark:border-gray-600"
+                  aria-label="Digite sua mensagem"
+                />
+                <button
+                  type="submit"
+                  className="bg-emerald-500 text-white p-2 rounded-full hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                  aria-label="Enviar mensagem"
+                >
+                  <SendHorizontal className="w-5 h-5" />
+                </button>
+              </div>
+            </form>
           </div>
-
-
         </div>
       )}
       <button
@@ -116,5 +119,5 @@ export default function Chat() {
         </svg>
       </button>
     </div>
-  )
+  );
 }
