@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Adicionando o favicon */}
-        <link rel="icon" href="/logo.png" sizes="any" type="image/x-icon" />
+        <link rel="icon" href="/logoblack.png" sizes="any" type="image/x-icon" />
         <title>{"<Holodeck Development/>"}</title>
       </head>
       <body
