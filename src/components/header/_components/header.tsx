@@ -145,7 +145,7 @@ export default function Header() {
         <SheetContent side="left">
           <Link href="/" className="flex items-center" prefetch={false}>
             <Image
-              src="/logo.png" // Caminho da sua imagem
+              src="/logoblack.png" // Caminho da sua imagem
               alt="Logo" // Descrição da imagem para acessibilidade
               width={56} // Defina a largura desejada
               height={56} // Defina a altura desejada
