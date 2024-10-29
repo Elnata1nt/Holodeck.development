@@ -22,11 +22,11 @@ export default function Header() {
     <header className="flex h-20 border-b-2 border-lime-700 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="/" className="mr-6 hidden lg:flex" prefetch={false}>
         <Image
-          src="/logo.png" // Caminho da sua imagem
+          src="/logoblack.png" // Caminho da sua imagem
           alt="Logo" // Descrição da imagem para acessibilidade
           width={56} // Defina a largura desejada
           height={56} // Defina a altura desejada
-          className="h-auto w-14" // Ajuste a largura e altura conforme necessário
+          className="h-auto w-14 bg" // Ajuste a largura e altura conforme necessário
         />
       </Link>
       <NavigationMenu className="hidden lg:flex">

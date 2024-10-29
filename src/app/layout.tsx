@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 // Metadata
 export const metadata: Metadata = {
-  title: "<DevCode/>",
+  title: "<Holodeck Development/>",
   description: "Desenvolvendo sua solução",
   icons: {
     icon: "/favicon.ico",
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
 
-    title: "<DevCode/>",
+    title: "<Holodeck Development/>",
     description: "Desenvolvendo sua solução",
     images: [
       {
         url: "https://my-portfolio-seven-theta-28.vercel.app/portifolio-elnata.png",
-        alt: "<DevCode/>",
+        alt: "<Holodeck Development/>",
       }
     ],
     authors: "Elnata",
@@ -52,7 +52,7 @@ export default function RootLayout({
       <head>
         {/* Adicionando o favicon */}
         <link rel="icon" href="/logo.png" sizes="any" type="image/x-icon" />
-        <title>{"<DevCode/>"}</title>
+        <title>{"<Holodeck Development/>"}</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

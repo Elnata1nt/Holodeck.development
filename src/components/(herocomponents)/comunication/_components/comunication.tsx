@@ -9,21 +9,24 @@ export default function ComuniationSection() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
         <div className="space-y-6 text-center lg:text-start">
           <div className="inline-block bg-[#e8ffa8] text-black text-sm font-medium px-3 py-1 rounded-full">
-            #1 Sites de primeira linha
+            #1 Projetos de primeira linha
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
-            Chegou a hora de{" "}
-            <span className="relative z-10">elevar sua marca!! </span>
+          <h1 className="text-3xl md:text-5xl lg:text-4xl font-bold leading-tight">
+            Equipe especializada para{" "}
+            <span className="relative z-10">elevar sua marca!</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-[#e8ffa8] -z-10"></span>
-            Desenvolvemos sites sob medida para{" "}
+            Com soluções personalizadas e automações inteligentes para{" "}
             <span className="relative z-10">impulsionar seu negócio</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-[#e8ffa8] -z-10"></span>
           </h1>
           <p className="text-base text-justify lg:text-start text-gray-600">
-            Transforme suas ideias em realidade com soluções web personalizadas
-            e inovadoras, desenvolvidas com as mais recentes tecnologias e
-            práticas recomendadas do setor.
+            Contamos com uma equipe altamente capacitada em desenvolvimento de
+            software, soluções e automação, com domínio das tecnologias mais
+            avançadas do mercado. Oferecemos inovação e excelência técnica para
+            transformar suas ideias em realidade com agilidade e precisão,
+            garantindo o sucesso do seu projeto.
           </p>
+
           <Button
             size="lg"
             className="bg-black text-white hover:bg-gray-800 rounded-lg px-6 py-3 text-lg"
@@ -48,7 +51,7 @@ export default function ComuniationSection() {
             <p className="text-sm ls:text-center text-gray-500 mb-4">
               Confiado por grandes marcas.
             </p>
-            <div className="flex space-x-6 ls:justify-center justify-center ls:items-center">
+            <div className="flex space-x-6 ls:justify-center justify-center lg:justify-start ls:items-center">
               <Image
                 src="/holodecklogo.png"
                 alt="Holodeck logo"
@@ -124,12 +127,12 @@ export default function ComuniationSection() {
                   Trabalhos concluídos
                 </p>
                 <div className="flex items-center justify-between mb-4">
-                <p className="text-3xl font-bold mb-2">+60</p>
-                <div className="flex space-x-1">
-                  {[1, 2, 3, 4, 5].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#e8ffa8]" />
-                  ))}
-                </div>
+                  <p className="text-3xl font-bold mb-2">+60</p>
+                  <div className="flex space-x-1">
+                    {[1, 2, 3, 4, 5].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-[#e8ffa8]" />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

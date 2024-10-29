@@ -10,11 +10,11 @@ export default function HeroData() {
         Freelance Fullstack disponível
       </Badge>
       <h1 className="text-4xl font-bold text-center md:text-5xl">
-        Desenvolvimento Fullstack Web para seus projetos
+        Desenvolvimento de Soluções para seus projetos
       </h1>
       <p className="max-w-2xl text-center text-muted-foreground">
-        Precisa de um desenvolvedor fullstack para criar, otimizar e escalar
-        seu site ou aplicação web? Eu ofereço serviços de desenvolvimento sob medida
+        Precisa de uma consultoria ou desenvolvedores para criar, otimizar e escalar
+        sua aplicação web ou precisa de uma automação? Oferecemos serviços de desenvolvimento sob medida
         que cobrem todo o ciclo de vida do seu projeto, da concepção ao lançamento.
       </p>
       <div className="flex space-x-4">
