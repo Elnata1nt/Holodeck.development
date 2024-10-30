@@ -19,7 +19,7 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="flex h-20 border-b-2 border-lime-700 w-full shrink-0 items-center px-4 md:px-6">
+    <header className="flex h-20 border-b-2 border-lime-300 w-full shrink-0 items-center px-4 md:px-6">
       <Link href="/" className="mr-6 hidden lg:flex" prefetch={false}>
         <Image
           src="/logo.png" // Caminho da sua imagem

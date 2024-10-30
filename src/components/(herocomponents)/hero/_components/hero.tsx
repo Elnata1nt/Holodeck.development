@@ -9,7 +9,7 @@ export default function HeroData() {
       <Badge variant="secondary" className="px-4 py-2">
         Freelance Fullstack disponível
       </Badge>
-      <h1 className="text-4xl font-bold text-center md:text-5xl">
+      <h1 className="text-4xl lg:max-w-3xl font-bold text-center md:text-5xl">
         Desenvolvimento de Soluções para seus projetos
       </h1>
       <p className="max-w-2xl text-center text-muted-foreground">

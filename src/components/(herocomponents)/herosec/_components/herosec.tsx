@@ -47,9 +47,9 @@ function HeroTag() {
   return (
     <section className="bg-black text-white py-16">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Nossa Missão é Melhorar Seu{" "}
-          <span className="bg-lime-300 text-black px-2">Negócio</span> Através
+        <h1 className="text-3xl lg:max-w-4xl md:text-4xl font-bold text-center mb-8">
+          Nossa missão é melhorar seu{" "}
+          <span className="bg-lime-300 text-black">negócio</span> através
           da Tecnologia
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
