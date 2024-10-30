@@ -1,10 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
-  ArrowRight,
   ChevronRight,
   Users,
   Brain,
@@ -13,7 +10,6 @@ import {
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
   Collapsible,
   CollapsibleContent,
@@ -54,57 +50,6 @@ export default function ProfileSection() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        {/* Seção Hero */}
-        {/* <section className="mx-6 grid lg:grid-cols-2 gap-8 py-12 md:py-20">
-          <div className="flex flex-col justify-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Eleve Sua Marca Com Design de Aplicativos e Websites Incríveis
-            </h1>
-            <p className="text-muted-foreground md:text-xl">
-              Com paixão pelo design, criamos aplicativos móveis e websites que se destacam entre os usuários.
-            </p>
-            <div className="flex gap-4">
-              <Button size="lg">Comece Agora</Button>
-              <Button size="lg" variant="outline">
-                Ver Projeto
-              </Button>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute right-0 top-0 bg-gray-100 rounded-lg p-6">
-              <div className="text-4xl font-bold">284+</div>
-              <p className="text-sm text-muted-foreground">Projetos concluídos este ano</p>
-            </div>
-            <div className="absolute right-24 bottom-0 bg-gray-100 rounded-lg p-6">
-              <div className="text-4xl font-bold">200+</div>
-              <p className="text-sm text-muted-foreground">Clientes satisfeitos</p>
-            </div>
-            <Image
-              src="/mockappage.jpg"
-              alt="Prévia do Design"
-              width={600}
-              height={400}
-              className="rounded-lg"
-            />
-          </div>
-        </section> */}
-
-        {/* Categorias */}
-        {/* <section className="border-y">
-          <div className="m-8 py-4">
-            <ScrollArea className="w-full whitespace-nowrap">
-              <div className="flex gap-4">
-                <Button variant="ghost">Branding</Button>
-                <Button variant="ghost">Desenvolvimento</Button>
-                <Button variant="ghost">Agência</Button>
-                <Button variant="ghost">Guia de Marca</Button>
-                <Button variant="ghost">Website</Button>
-                <Button variant="ghost">Aplicativo Mobile</Button>
-              </div>
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
-          </div>
-        </section> */}
 
         <AboutSection />
 
