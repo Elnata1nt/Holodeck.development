@@ -55,9 +55,9 @@ export default function ProfileSection() {
 
         {/* Funcionalidades */}
         <section className="py-12 bg-black lg:py-20 md:py-20">
-          <div className="container mx-auto px-8">
+          <div className="container mx-auto lg:px-8 px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl text-white font-bold sm:text-4xl md:text-5xl">
+              <h2 className="lg:text-3xl text-2xl text-white font-bold sm:text-4xl md:text-5xl">
                 Criadores, Inovadores e Visionários Apaixonados
               </h2>
               <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
@@ -158,9 +158,6 @@ export default function ProfileSection() {
             Pronto para elevar sua presença digital? Conecte-se conosco para
             discutir como a LabAgency pode ajudar você a alcançar resultados.
           </p>
-          <Button className="mt-8 bg-black" size="lg" variant="outline">
-            Comece Agora
-          </Button>
         </div>
         <div className="border-t mx-8 border-gray-800"></div>
       </footer>

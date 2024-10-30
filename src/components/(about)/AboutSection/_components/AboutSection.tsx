@@ -17,30 +17,15 @@ import {
   Users,
   Target,
 } from "lucide-react";
+import AboutHero from "../../bouthero/_components/abouthero";
 
 export default function AboutSection() {
   const [, setActiveTab] = useState("mission");
 
   return (
     <div className="min-h-screen bg-muted">
-      <header className="container mx-auto px-4 py-12">
-        <motion.h1
-          className="text-4xl md:text-5xl font-bold text-center mb-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Sobre a Nossa Empresa
-        </motion.h1>
-        <motion.p
-          className="text-xl text-center text-muted-foreground"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Inovação, Excelência e Compromisso
-        </motion.p>
-      </header>
+      
+      <AboutHero />
 
       <main className="container mx-auto px-4 py-4">
         <Tabs defaultValue="mission" className="mb-12">
@@ -58,7 +43,7 @@ export default function AboutSection() {
               value="projects"
               onClick={() => setActiveTab("projects")}
             >
-              Projetos & Objetivos
+             Nossos Metas
             </TabsTrigger>
           </TabsList>
           
@@ -148,7 +133,7 @@ export default function AboutSection() {
           <TabsContent value="projects">
             <Card>
               <CardHeader>
-                <CardTitle>Nossos Projetos e Objetivos</CardTitle>
+                <CardTitle>Nossas Metas</CardTitle>
                 <CardDescription>
                   Realizações que nos orgulham e metas que nos inspiram
                 </CardDescription>
