@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Desenvolvendo sua solução",
     images: [
       {
-        url: "https://my-portfolio-seven-theta-28.vercel.app/portifolio-elnata.png",
+        url: "https://holodeck-development.vercel.app//portifolio-elnata.png",
         alt: "<Holodeck Development/>",
       }
     ],
