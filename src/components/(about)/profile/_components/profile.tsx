@@ -8,8 +8,6 @@ import {
   Sparkles,
   Clock,
 } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
 import {
   Collapsible,
   CollapsibleContent,
