@@ -29,7 +29,7 @@ export default function ProjectsSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl mx-auto">
             {[
               {
-                title: "JOV Education",
+                title: "Zivo Catalago inteligente",
                 description: "Plataforma de educação tecnológica",
                 link: "https://tistto-repo.vercel.app/",
                 image: "https://tistto-repo.vercel.app/assets/Tistto_principal.png",

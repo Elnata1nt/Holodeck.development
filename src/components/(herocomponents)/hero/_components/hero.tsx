@@ -7,7 +7,7 @@ export default function HeroData() {
   return (
     <section className="flex flex-col items-center justify-center w-full px-4 py-16 space-y-8 bg-lime-300">
       <Badge variant="secondary" className="px-4 py-2">
-        Freelance Fullstack disponível
+        Holodeck Development Technology
       </Badge>
       <h1 className="text-4xl lg:max-w-3xl font-bold text-center md:text-5xl">
         Desenvolvimento de Soluções para seus projetos

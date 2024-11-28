@@ -98,7 +98,7 @@ export default function ComuniationSection() {
               <Image
                 src="/communithome.jpg"
                 alt="Student learning online"
-                width={800}
+                width={900}
                 height={600}
                 className="object-cover"
               />
